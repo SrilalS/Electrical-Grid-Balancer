@@ -21,5 +21,25 @@ namespace GridBalancer
         {
 
         }
+
+        public string getName()
+        {
+                return Name.Text;
+        }
+
+        public int getType()
+        {
+            return Type.SelectedIndex; 
+        }
+
+        public string getPower()
+        {
+            return Power.Value.ToString();
+        }
+
+        private void AddPS_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

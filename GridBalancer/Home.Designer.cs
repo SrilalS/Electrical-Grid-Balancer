@@ -1,6 +1,6 @@
 ﻿namespace GridBalancer
 {
-    partial class Form1
+    partial class Home
     {
         /// <summary>
         /// Required designer variable.
@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.AddPS = new System.Windows.Forms.Button();
             this.AddPC = new System.Windows.Forms.Button();
+            this.AddPS = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.SolarAmount = new System.Windows.Forms.ProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.WindAmount = new System.Windows.Forms.ProgressBar();
             this.label3 = new System.Windows.Forms.Label();
             this.WaterAmount = new System.Windows.Forms.ProgressBar();
+            this.WindAmount = new System.Windows.Forms.ProgressBar();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SolarAmount = new System.Windows.Forms.ProgressBar();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.TotalFreq = new System.Windows.Forms.Label();
             this.TotalPower = new System.Windows.Forms.Label();
+            this.TotalFreq = new System.Windows.Forms.Label();
             this.PSList = new System.Windows.Forms.ListView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -63,6 +63,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controls";
             // 
+            // AddPC
+            // 
+            this.AddPC.Location = new System.Drawing.Point(6, 69);
+            this.AddPC.Name = "AddPC";
+            this.AddPC.Size = new System.Drawing.Size(188, 42);
+            this.AddPC.TabIndex = 2;
+            this.AddPC.Text = "Add a Power Consumer";
+            this.AddPC.UseVisualStyleBackColor = true;
+            // 
             // AddPS
             // 
             this.AddPS.Location = new System.Drawing.Point(6, 21);
@@ -72,15 +81,6 @@
             this.AddPS.Text = "Add a Power Source";
             this.AddPS.UseVisualStyleBackColor = true;
             this.AddPS.Click += new System.EventHandler(this.AddPS_Click);
-            // 
-            // AddPC
-            // 
-            this.AddPC.Location = new System.Drawing.Point(6, 69);
-            this.AddPC.Name = "AddPC";
-            this.AddPC.Size = new System.Drawing.Size(188, 42);
-            this.AddPC.TabIndex = 2;
-            this.AddPC.Text = "Add a Power Consumer";
-            this.AddPC.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -94,14 +94,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chaos";
             // 
-            // button3
+            // button5
             // 
-            this.button3.Location = new System.Drawing.Point(6, 69);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(188, 42);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Low Wind";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button5.Location = new System.Drawing.Point(6, 117);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(188, 42);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "Low Water";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -112,14 +112,14 @@
             this.button4.Text = "High Cloud";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // button3
             // 
-            this.button5.Location = new System.Drawing.Point(6, 117);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(188, 42);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Low Water";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(6, 69);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(188, 42);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "Low Wind";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -135,41 +135,6 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Resources";
-            // 
-            // SolarAmount
-            // 
-            this.SolarAmount.Location = new System.Drawing.Point(9, 40);
-            this.SolarAmount.Name = "SolarAmount";
-            this.SolarAmount.Size = new System.Drawing.Size(208, 23);
-            this.SolarAmount.Step = 1;
-            this.SolarAmount.TabIndex = 0;
-            this.SolarAmount.Value = 90;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Sun Light";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Wind";
-            // 
-            // WindAmount
-            // 
-            this.WindAmount.Location = new System.Drawing.Point(9, 88);
-            this.WindAmount.Name = "WindAmount";
-            this.WindAmount.Size = new System.Drawing.Size(208, 23);
-            this.WindAmount.TabIndex = 3;
-            this.WindAmount.Value = 90;
             // 
             // label3
             // 
@@ -188,6 +153,41 @@
             this.WaterAmount.TabIndex = 4;
             this.WaterAmount.Value = 90;
             // 
+            // WindAmount
+            // 
+            this.WindAmount.Location = new System.Drawing.Point(9, 88);
+            this.WindAmount.Name = "WindAmount";
+            this.WindAmount.Size = new System.Drawing.Size(208, 23);
+            this.WindAmount.TabIndex = 3;
+            this.WindAmount.Value = 90;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 17);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Wind";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Sun Light";
+            // 
+            // SolarAmount
+            // 
+            this.SolarAmount.Location = new System.Drawing.Point(9, 40);
+            this.SolarAmount.Name = "SolarAmount";
+            this.SolarAmount.Size = new System.Drawing.Size(208, 23);
+            this.SolarAmount.Step = 1;
+            this.SolarAmount.TabIndex = 0;
+            this.SolarAmount.Value = 90;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.TotalPower);
@@ -199,16 +199,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Grid Status";
             // 
-            // TotalFreq
-            // 
-            this.TotalFreq.AutoSize = true;
-            this.TotalFreq.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalFreq.Location = new System.Drawing.Point(675, 18);
-            this.TotalFreq.Name = "TotalFreq";
-            this.TotalFreq.Size = new System.Drawing.Size(252, 69);
-            this.TotalFreq.TabIndex = 0;
-            this.TotalFreq.Text = "50.00Hz";
-            // 
             // TotalPower
             // 
             this.TotalPower.AutoSize = true;
@@ -219,6 +209,16 @@
             this.TotalPower.TabIndex = 1;
             this.TotalPower.Text = "5000MW";
             // 
+            // TotalFreq
+            // 
+            this.TotalFreq.AutoSize = true;
+            this.TotalFreq.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalFreq.Location = new System.Drawing.Point(675, 18);
+            this.TotalFreq.Name = "TotalFreq";
+            this.TotalFreq.Size = new System.Drawing.Size(252, 69);
+            this.TotalFreq.TabIndex = 0;
+            this.TotalFreq.Text = "50.00Hz";
+            // 
             // PSList
             // 
             this.PSList.HideSelection = false;
@@ -227,8 +227,9 @@
             this.PSList.Size = new System.Drawing.Size(321, 475);
             this.PSList.TabIndex = 4;
             this.PSList.UseCompatibleStateImageBehavior = false;
+            this.PSList.View = System.Windows.Forms.View.List;
             // 
-            // Form1
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -238,7 +239,8 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grid Balancer Pre Alpha";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
