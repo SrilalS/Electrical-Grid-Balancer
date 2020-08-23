@@ -28,15 +28,19 @@ namespace GridBalancer
         {
             PSList.Items.Clear();
             PSList.Columns.Clear();
-            PSList.Columns.Add("Name");
-            PSList.Columns.Add("Type");
-            PSList.Columns.Add("Power");
+
+            PSList.View = View.Details;
+            PSList.GridLines = true;
+            PSList.FullRowSelect = true;
+
+            PSList.Columns.Add("Name",50);
+            PSList.Columns.Add("Type",50);
+            PSList.Columns.Add("Power",50);
             foreach (PowerSource PXS in PowerSources)
             {
-                ListViewItem LVI = new ListViewItem();
-                LVI.Text = PXS.Name;
-
-                PSList.Items.Add(LVI);
+                string[] LVX = {PXS.Name, PXS.getPType(), PXS.Energy.ToString()};
+                ListViewItem LVXI = new ListViewItem(LVX);
+                PSList.Items.Add(LVXI);
             }
         }
 
@@ -75,7 +79,7 @@ namespace GridBalancer
                     isV = true;
                     VT = 100;
                 }
-                PowerSource PSX = new PowerSource(addNewPS.getName(), double.Parse(addNewPS.getPower()),isV,VT);
+                PowerSource PSX = new PowerSource(addNewPS.getName(), double.Parse(addNewPS.getPower()),addNewPS.getType(),isV,VT);
 
                 PowerSources.Add(PSX);
                 setList();
